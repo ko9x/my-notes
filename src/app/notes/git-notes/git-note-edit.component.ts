@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Note } from '../note';
+import { NoteService } from '../service/note.service';
+
+
 @Component({
   selector: 'app-git-note-edit',
   templateUrl: './git-note-edit.component.html',
@@ -7,9 +11,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitNoteEditComponent implements OnInit {
 
-  constructor() { }
+  constructor(private noteService: NoteService) { }
 
   ngOnInit() {
+
   }
 
 }
